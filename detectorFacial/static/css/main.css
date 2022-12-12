@@ -1,0 +1,78 @@
+
+body{/*
+    background: #191d18 !important;*/
+    color: #fff !important;
+}
+
+.irFondo{
+    width: 100vw;
+    height: auto;
+    bottom: 0;
+    position: relative;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.border-b-1{
+    width: 100%;
+    height: auto;
+    padding: 0.03vw;
+    margin-top: 0.5vw;
+    margin-bottom: 0.5vw;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.height-container-image{
+    height: 19vw;
+}
+
+.bg-shadow-color{
+    background: linear-gradient(45deg,rgba(0, 0, 0, 0.8),rgba(177, 177, 177, 0));
+}
+
+.imageUsoPaso1{
+    background-image: url(../uploads/hombre_con_computadora.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.imageUsoPaso2{
+    background-image: url(../uploads/chica_con_telefono_en_mano_frente_a_edificio.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.padding-contacto{
+    padding-top: 6vw;
+    padding-bottom: 6vw;
+}
+
+.padding-contacto-tageta{
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
+
+
+.centrarPIndex{
+    width: 50%;
+    transform: translate(50%,-0%);
+}
+
+.heigtTamano{
+    height: 25vw !important;
+    
+}
+
+.imagenSelected{
+    margin-left: 2vw;
+}
+
+
+
+

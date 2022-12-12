@@ -1,0 +1,315 @@
+
+
+
+
+
+
+
+
+
+.selectImageFile{
+    width: 40vw;
+    height: 30vw;
+    top: 0%;
+    left: 50%;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    margin-top: 10vw;
+    transform: translate(-50%,-0%);
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 0.5vw;
+    border: 0.1vw solid rgba(0, 0, 0, 0.3);
+}
+
+.selectImageFile .containerImage{
+    width: 100%;
+    height: 100%;
+}
+
+.selectImageFile .containerImage .cimageHeader{
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: block;
+}
+
+.selectImageFile .containerImage .cimageHeader{
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+.selectImageFile .containerImage .cimageBody{
+    width: 100%;
+    height: 70%;
+    position: relative;
+    display: block;
+    border-top: 0.1vw solid rgba(0, 0, 0, 0.3);
+    border-bottom: 0.1vw solid rgba(0, 0, 0, 0.3);
+}
+
+.selectImageFile .containerImage .cimageBody .contenedorImagen{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: inline-block;
+    background: rgb(0, 0, 0);
+}
+
+.selectImageFile .containerImage .cimageBody .contenedorImagen .muestraImagen{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: inline-block;
+}
+
+.selectImageFile .containerImage .cimageBody .contenedorImagen .muestraImagen img{
+    width: 100%;
+    height: 100%;
+    float: left;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    display: inline-block;
+    transform: translate(-50%,-50%);
+    background: #e2e2e2;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.selectImageFile .containerImage .cimageBody .contenedorImagen .muestraImagen canvas{
+    width: 100%;
+    height: 100%;
+    float: left;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    display: inline-block;
+    transform: translate(-50%,-50%);
+    background: #e2e2e2;
+}
+
+
+
+
+
+
+
+
+
+
+
+.selectImageFile .containerImage .cimageFooter{
+    width: 100%;
+    height: 30%;
+    position: relative;
+    display: block;
+}
+
+.selectImageFile .containerImage .cimageFooter .contenedorInput{
+    width: 100%;
+    height: 50%;
+    position: relative;
+    display: block;
+}
+
+.selectImageFile .containerImage .cimageFooter .contenedorInput .muestraInput{
+    width: 30%;
+    height: 50%;
+    float: left;
+    top: 50%;
+    left: 0%;
+    position: relative;
+    transform: translate(-0%,-50%);
+    display: inline-block;
+    cursor: pointer;
+}
+
+.selectImageFile .containerImage .cimageFooter .contenedorInput .muestraInput::before{
+    color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    content: 'Seleccionar imagen'; /* testo por defecto */
+    position: absolute;
+    align-items: center;
+    border-radius: 0.1vw;
+    justify-content: center;
+    background-color: rgb(219, 168, 0);
+    font-size: 1vw;
+    font-family: Roboto10;
+    cursor: pointer;
+}
+
+.selectImageFile .containerImage .cimageFooter .contenedorInput .muestraInput input{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    display: inline-block;
+}
+
+
+
+
+
+.selectImageFile .containerImage .cimageFooter .contenedorInput .muestraNuevas{
+    width: 70%;
+    height: 50%;
+    float: left;
+    top: 50%;
+    left: 0%;
+    position: relative;
+    display: flex;
+    transform: translate(-0%,-50%);
+    background: #fff;
+    align-items: center;
+    border-radius: 0.2vw;
+    justify-content: center;
+    z-index: 1;
+}
+
+
+
+
+
+/*----------*/
+
+
+
+
+
+.selectImageFile .containerImage .cimageFooter .contenedorBotones{
+    width: 100%;
+    height: 50%;
+    position: relative;
+    display: inline-block;
+    background: #262626;
+}
+
+.selectImageFile .containerImage .cimageFooter .contenedorBotones .espacioBoton{
+    width: 50%;
+    height: 100%;
+    float: right;
+    top: 50%;
+    right: 0;
+    position: relative;
+    display: inline-block;
+    transform: translate(-0%,-50%);
+    background: #464646;
+}
+
+.selectImageFile .containerImage .cimageFooter .contenedorBotones .espacioBoton .ajusteBoton{
+    width: 20%;
+    height: 50%;
+    float: right;
+    top: 50%;
+    right: 0;
+    position: relative;
+    display: inline-block;
+    transform: translate(-0%,-50%);
+    border-left: 0.1vw solid rgba(111, 111, 111, 0.5);
+}
+
+.selectImageFile .containerImage .cimageFooter .contenedorBotones .espacioBoton .ajusteBoton .contIcon{
+    width: 100%;
+    height: 100%;
+    float: right;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.selectImageFile .containerImage .cimageFooter .contenedorBotones .espacioBoton .ajusteBoton .contIcon label{
+    width: auto;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    display: inline-block;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    font-size: 1.4vw;
+    cursor: inherit;
+}
+
+
+
+
+
+.selectImageFile .containerImage .cimageFooter .contenedorBotones .muestraUrl{
+    width: 50%;
+    height: 100%;
+    float: left;
+    top: 50%;
+    left: 0;
+    position: relative;
+    display: inline-block;
+    transform: translate(-0%,-50%);
+    background: #464646;
+}
+
+.selectImageFile .containerImage .cimageFooter .contenedorBotones .muestraUrl .ajusteUrl{
+    width: 100%;
+    height: 50%;
+    float: left;
+    top: 50%;
+    left: 0%;
+    position: relative;
+    display: inline-block;
+    color: rgb(38, 38, 38);
+    transform: translate(-0%,-50%);
+    background: rgb(255, 255, 255);
+    font-size: 1vw;
+    font-family: Roboto10;
+    border-top: 0.1vw solid #bebebe;
+    border-right: 0.1vw solid #bebebe;
+    border-bottom: 0.1vw solid #bebebe;
+}
+
+.selectImageFile .containerImage .cimageFooter .contenedorBotones .muestraUrl .ajusteUrl text{
+    width: 90%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    color: inherit;
+    transform: translate(-50%,-50%);
+    font-family: inherit;
+    white-space: pre-line;
+    text-overflow: ellipsis;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

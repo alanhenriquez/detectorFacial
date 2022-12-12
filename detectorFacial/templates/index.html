@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detector facial</title>
+    <link rel="stylesheet" href="../static/css/main.css">
+    <link rel="stylesheet" href="../static/css/selectImageFile.css">
+    <link rel="stylesheet" href="../static/css/Iconos/fontello-7c56770c/css/fontello.css">
+    <link rel="stylesheet" href="../static/css/Fuentes-tipografia.css">
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="../static/js/jquery.js"></script>
+</head>
+<body>
+    <header class="p-3 text-bg-dark">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none px-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-box" viewBox="0 0 16 16">
+                        <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5 8 5.961 14.154 3.5 8.186 1.113zM15 4.239l-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z"/>
+                    </svg>
+                </a>
+
+                <ul class="menu nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="../templates/index.html" class="nav-link px-2 text-secondary">Home</a></li>
+                    <li><a href="../templates/acercade.html" class="nav-link px-2 text-secondary">Acerca de</a></li>
+                    <li><a href="../templates/contacto.html" class="nav-link px-2 text-secondary">Contacto</a></li>
+                </ul>
+
+                <!--
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                    <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
+                </form>
+
+                <div class="text-end">
+                    <button type="button" class="btn btn-outline-light me-2">Login</button>
+                    <button type="button" class="btn btn-warning">Sign-up</button>
+                </div>
+                -->
+            </div>
+        </div>
+    </header>
+    
+    
+    
+    
+    
+    <div class="selectImageFile">
+        <div class="containerImage">
+            <div class="cimageHeader"></div>
+            <div class="cimageBody">
+                <div class="contenedorImagen">
+                    <div class="muestraImagen">
+                        <canvas></canvas>
+                        <img src="../static/uploads/chica_con_telefono_en_mano_frente_a_edificio.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="cimageFooter">
+                <div class="contenedorInput">
+                    <div class="muestraInput">
+                        <input accept="image/png,image/jpeg" type="file" onchange="manejaArchivo(this.files)">
+                    </div>
+                    <div class="muestraNuevas"></div>
+                </div>
+                <div class="contenedorBotones">
+                    <div class="muestraUrl">
+                        <div class="ajusteUrl">
+                            <text title="Url seleccionada">Url</text>
+                        </div>
+                    </div>
+                    <div class="espacioBoton">
+                        <div class="ajusteBoton descargar">
+                            <div class="contIcon"  title="descargar imagen">
+                                <label class="icon-download"></label>
+                            </div>
+                        </div>
+                        <div class="ajusteBoton subir">
+                            <div class="contIcon"  title="Subir imagen a tu cuenta">
+                                <label class="icon-upload"></label>
+                            </div>
+                        </div>
+                        <div class="ajusteBoton detectar">
+                            <div class="contIcon"  title="Detector facial">
+                                <label class="icon-object-ungroup"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+        
+    
+
+    
+
+    
+      
+    
+    
+</body>
+<div class="irFondo">
+        <footer class="py-3 my-4">
+          <ul class="nav justify-content-center">
+            <li><a href="../templates/index.html" class="nav-link px-2 text-secondary">Home</a></li>
+            <li><a href="../templates/acercade.html" class="nav-link px-2 text-secondary">Acerca de</a></li>
+            <li><a href="../templates/contacto.html" class="nav-link px-2 text-secondary">Contacto</a></li>
+          </ul>
+          <div class="border-b-1"></div>
+        <p class="text-center text-muted">&copy; 2022 Company, Inc</p>
+    </footer>
+</div>
+
+    
+<script type="module">
+
+  // Import the functions you need from the SDKs you need
+
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js";
+
+  // TODO: Add SDKs for Firebase products that you want to use
+
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+
+  // Your web app's Firebase configuration
+
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
+  const firebaseConfig = {
+
+    apiKey: "AIzaSyAsgbbFdjLAJi3SDPVK3UHWMj5qgC0p3wA",
+
+    authDomain: "defa-fec3b.firebaseapp.com",
+
+    projectId: "defa-fec3b",
+
+    storageBucket: "defa-fec3b.appspot.com",
+
+    messagingSenderId: "988301957936",
+
+    appId: "1:988301957936:web:67ecc20de6b10d511386f5",
+
+    measurementId: "G-W76PG09MZD"
+
+  };
+
+
+  // Initialize Firebase
+
+  const app = initializeApp(firebaseConfig);
+
+  const analytics = getAnalytics(app);
+    
+    
+
+</script>    
+<script src="../static/js/index.js"></script>
+</html>
+
+
+
+

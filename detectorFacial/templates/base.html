@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{%block title%} {%endblock%}</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/index.css')}}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="{{url_for('static', filename='css/jquery.js')}}"></script>
+</head>
+<body>
+    <header class="p-3 text-bg-dark">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none px-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-box" viewBox="0 0 16 16">
+                        <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5 8 5.961 14.154 3.5 8.186 1.113zM15 4.239l-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z"/>
+                    </svg>
+                </a>
+
+                <ul class="menu nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    {% if enlaces %}
+                    {% for enlace in enlaces %}
+                    <li><a href="{{ enlace.url }}" class="nav-link px-2 text-secondary">{{ enlace.texto }}</a></li>
+                    {% endfor %}
+                    {% endif %}
+                </ul>
+
+                <!--
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                    <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
+                </form>
+
+                <div class="text-end">
+                    <button type="button" class="btn btn-outline-light me-2">Login</button>
+                    <button type="button" class="btn btn-warning">Sign-up</button>
+                </div>
+                -->
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container py-3">
+        {% block body %}{% endblock %}
+    </div>  
+
+    
+
+    
+      
+    
+    
+</body>
+<div class="irFondo">
+        <footer class="py-3 my-4">
+          <ul class="nav justify-content-center">
+            {% if enlaces %}
+            {% for enlace in enlaces %}
+            <li class="nav-item"><a href="{{ enlace.url }}" class="nav-link px-2 text-muted">{{ enlace.texto }}</a></li>
+            {% endfor %}
+            {% endif %}
+          </ul>
+          <div class="border-b-1"></div>
+        <p class="text-center text-muted">&copy; 2022 Company, Inc</p>
+    </footer>
+</div>
+
+<script src="{{url_for('static', filename='js/index.css')}}"></script>
+</html>

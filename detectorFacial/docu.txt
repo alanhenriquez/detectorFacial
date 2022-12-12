@@ -1,0 +1,4 @@
+subir archivos a host firebase: firebase deploy --only hosting:defa
+iniciar como servidor local: firebase serve
+para agregar nuevos recursos al host: Agrega estos a la carpeta publica creada por Firebase a tu proyecto
+para actualizar los recursos al hostweb: firebase deploy

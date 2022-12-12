@@ -1,0 +1,83 @@
+{%extends './base.html'%}
+
+{%block title%}Acerca de{%endblock%}
+
+{% block body %}
+
+<div class="container px-4 py-5">
+  <h2 class="pb-2 border-bottom">Acerca de</h2>
+
+  <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
+    <div class="d-flex flex-column align-items-start gap-2">
+      <h3 class="fw-bold">Trabajando con reconocimiento</h3>
+      <p class="text-muted">Nos encontramos trabajando en una web de reconocimiento facial mediante imagenes con fines de entretenimiento a tu alcance.</p>
+      <a href="{{enlaces[0].url}}" class="btn btn-primary btn-lg">Probar tecnología de reconocimiento</a>
+    </div>
+    <div class="row row-cols-1 row-cols-sm-2 g-4">
+      <div class="d-flex flex-column gap-2">
+        <h4 class="fw-semibold mb-0">Tecnología Backend</h4>
+        <p class="text-muted">Proyecto trabajado utilizando python como base fundamental.</p>
+      </div>
+
+      <div class="d-flex flex-column gap-2">
+        <h4 class="fw-semibold mb-0">Tecnología Frontend</h4>
+        <p class="text-muted">Utilizamos como lenguajes y recursos esenciales a: HTML, CSS Y BOOTSTRAP</p>
+      </div>
+
+      <div class="d-flex flex-column gap-2">
+        <h4 class="fw-semibold mb-0">Requiere una cuenta?</h4>
+        <p class="text-muted">No es nesesario. Es mas, ni siquiera solicitamos una.</p>
+      </div>
+
+      <div class="d-flex flex-column gap-2">
+        <h4 class="fw-semibold mb-0">Almacenan nuestros datos?</h4>
+        <p class="text-muted">Sus datos no son almacenados en nuestros servidores, solo recolectamos la actividad por motivos uso y desuso</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container marketing">
+
+    <div class="featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-bold lh-1">Cual es su finalidad?</h2>
+        <p class="lead">Somos un grupo de estudiantes de la Universidad Capitan General Gerardo Barrios, al ser un proyecto estudiantil,
+           buscamos el insentivo y promocion de conocimientos sobre estudiantes y personas con interes, al mundo del reconocimiento facial 
+           y las Inteligencias Artificiales(IA). </p>
+        <p class="lead">Siendo de nuestra finalidad la creacion, aprendizaje, desarrollo, creatividad, e innovacion sobre el mudo 
+          dijital, y, el mundo que nos rodea. </p>
+      </div>
+
+      <div class="col height-container-image">
+        <div class="card card-cover h-100 overflow-hidden rounded-4 shadow-lg imageUsoPaso1">
+          <div class="d-flex flex-column h-100 p-3 pb-2 text-white text-shadow-1 bg-shadow-color">
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Oportunidad</h3>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">Tecnologias en desarrollo de oportunidades.</h2>
+        <p class="lead">Dentro de un mundo lleno de alta demanda tecnologica, es de saber que existe una gran cantidad de ofertas de negocios. Todo
+          dependera de tu nivel de avance y creacion funcional.</p>
+      </div>
+
+      <div class="col height-container-image">
+        <div class="card card-cover h-100 overflow-hidden rounded-4 shadow-lg imageUsoPaso2">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1 bg-shadow-color">
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Desarrollo profecional</h3>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+{% endblock %}
